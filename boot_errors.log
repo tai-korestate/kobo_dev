@@ -1,82 +1,172 @@
-Traceback (most recent call last):
-  File "/usr/bin/jack_control", line 399, in <module>
-    main()
-  File "/usr/bin/jack_control", line 158, in main
-    bus = dbus.SessionBus()
-  File "/usr/lib/python2.7/dist-packages/dbus/_dbus.py", line 211, in __new__
-    mainloop=mainloop)
-  File "/usr/lib/python2.7/dist-packages/dbus/_dbus.py", line 100, in __new__
-    bus = BusConnection.__new__(subclass, bus_type, mainloop=mainloop)
-  File "/usr/lib/python2.7/dist-packages/dbus/bus.py", line 122, in __new__
-    bus = cls._new_for_bus(address_or_type, mainloop=mainloop)
-dbus.exceptions.DBusException: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 516, in urlopen
-    body=body, headers=headers)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 304, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 724, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 203, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 133, in _new_conn
-    (self.host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 64, in create_connection
-    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
-  File "/usr/lib/python3.4/socket.py", line 530, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
+/home/pi/Kobo/kobo_dev/load_program.sh: 1: /home/pi/Kobo/kobo_dev/load_program.sh: ifcconfig: not found
+/home/pi/Kobo/kobo_dev/load_program.sh: 2: /home/pi/Kobo/kobo_dev/load_program.sh: iwconfig: not found
+[010f29e0] core interface error: no suitable interface module
+[010608f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[010f29e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[010f29e0] core interface error: no suitable interface module
+[010608f8] core libvlc error: interface "dbus,none" initialization failed
+[010f29e0] dummy interface: using the dummy interface module...
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[b5b0e3f0] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer
+[010f7b90] alsa audio output error: cannot estimate delay: Broken pipe
+[01073130] core playlist: end of playlist, exiting
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.front.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM front
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround40.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround40
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround41
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround50
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround51
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.surround71.0:CARD=0'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM surround71
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM iec958
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib confmisc.c:1286:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4259:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4738:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+ALSA lib pulse.c:243:(pulse_connect) PulseAudio: Unable to connect: Connection refused
 
-During handling of the above exception, another exception occurred:
+ALSA lib pulse.c:243:(pulse_connect) PulseAudio: Unable to connect: Connection refused
 
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 362, in send
-    timeout=timeout
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 559, in urlopen
-    _pool=self, _stacktrace=stacktrace)
-  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 245, in increment
-    raise six.reraise(type(error), error, _stacktrace)
-  File "/usr/lib/python3/dist-packages/six.py", line 624, in reraise
-    raise value.with_traceback(tb)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 516, in urlopen
-    body=body, headers=headers)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 304, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 724, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 203, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 133, in _new_conn
-    (self.host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 64, in create_connection
-    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
-  File "/usr/lib/python3.4/socket.py", line 530, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-urllib3.exceptions.ProtocolError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "cap_and_send.py", line 26, in <module>
-    playback("Hello, I am Kobo, your home assistant.  The date is %s.  Say something when you are ready to begin." % t[1])
-  File "cap_and_send.py", line 19, in playback
-    tts.save(kobo_voice)
-  File "/usr/local/lib/python3.4/dist-packages/gtts/tts.py", line 94, in save
-    self.write_to_fp(f)
-  File "/usr/local/lib/python3.4/dist-packages/gtts/tts.py", line 107, in write_to_fp
-    'tk' : self.token.calculate_token(part)}
-  File "/usr/local/lib/python3.4/dist-packages/gtts_token/gtts_token.py", line 28, in calculate_token
-    seed = self._get_token_key()
-  File "/usr/local/lib/python3.4/dist-packages/gtts_token/gtts_token.py", line 58, in _get_token_key
-    response = requests.get("https://translate.google.com/")
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in get
-    return request('get', url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 49, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 457, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 569, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 407, in send
-    raise ConnectionError(err, request=request)
-requests.exceptions.ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+Cannot connect to server socket err = No such file or directory
+Cannot connect to server request channel
+jack server is not running or cannot be started
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[00eb39e0] core interface error: no suitable interface module
+[00e218f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[00eb39e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[00eb39e0] core interface error: no suitable interface module
+[00e218f8] core libvlc error: interface "dbus,none" initialization failed
+[00eb39e0] dummy interface: using the dummy interface module...
+[00e34130] core playlist: end of playlist, exiting
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[005ac9e0] core interface error: no suitable interface module
+[0051a8f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[005ac9e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[005ac9e0] core interface error: no suitable interface module
+[0051a8f8] core libvlc error: interface "dbus,none" initialization failed
+[005ac9e0] dummy interface: using the dummy interface module...
+[0052d130] core playlist: end of playlist, exiting
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[020699e0] core interface error: no suitable interface module
+[01fd78f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[020699e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[020699e0] core interface error: no suitable interface module
+[01fd78f8] core libvlc error: interface "dbus,none" initialization failed
+[020699e0] dummy interface: using the dummy interface module...
+[01fea130] core playlist: end of playlist, exiting
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[01e449e0] core interface error: no suitable interface module
+[01db28f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[01e449e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[01e449e0] core interface error: no suitable interface module
+[01db28f8] core libvlc error: interface "dbus,none" initialization failed
+[01e449e0] dummy interface: using the dummy interface module...
+[01dc5130] core playlist: end of playlist, exiting
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[0147b9e0] core interface error: no suitable interface module
+[013e98f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[0147b9e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[0147b9e0] core interface error: no suitable interface module
+[013e98f8] core libvlc error: interface "dbus,none" initialization failed
+[0147b9e0] dummy interface: using the dummy interface module...
+[013fc130] core playlist: end of playlist, exiting
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[011989e0] core interface error: no suitable interface module
+[011068f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[011989e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[011989e0] core interface error: no suitable interface module
+[011068f8] core libvlc error: interface "dbus,none" initialization failed
+[011989e0] dummy interface: using the dummy interface module...
+[01119130] core playlist: end of playlist, exiting
+Audio codec pcm_s16le channels 2 samplerate 16000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+have a nice day ;)
+[01f1b9e0] core interface error: no suitable interface module
+[01e898f8] core libvlc error: interface "globalhotkeys,none" initialization failed
+[01f1b9e0] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[01f1b9e0] core interface error: no suitable interface module
+[01e898f8] core libvlc error: interface "dbus,none" initialization failed
+[01f1b9e0] dummy interface: using the dummy interface module...
+[01e9c130] core playlist: end of playlist, exiting
