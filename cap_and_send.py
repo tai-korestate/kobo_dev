@@ -18,7 +18,7 @@ DEVICE_ID = 'da4b9237ba'
 ACTIVE = True
 ENDPOINT = "http://www.korestate.com/cloud/api/beta/koFuncs.php?q={target}&deviceId=%s" % DEVICE_ID
 REM_ENDPOINT = "http://www.korestate.com/cloud/api/beta/koReminder.php?deviceId=%s" % DEVICE_ID
-
+LANGUAGE = "ko"
 kobo_voice = os.path.join(os.path.abspath(os.curdir), "kobo_voice.flac")
 DEBUG = False
 
@@ -59,7 +59,7 @@ def vlc_playback(my_text,vlc_instance = instance):
     else:
 
         print("Sending to GTTS")
-        tts = gTTS(text = my_text, lang = "en", debug = DEBUG)
+        tts = gTTS(text = my_text, lang = LANGUAGE, debug = DEBUG)
         
         print("Text Processed")
         tts.write_to_fp()
@@ -141,11 +141,11 @@ with sr.Microphone(sample_rate = 48000, device_index = 2, chunk_size = 5120) as 
         
         try:
             print("Sending cap to google")
-            send_txt = r.recognize_google(audio, key = GOOGLE_SPEECH_KEY)
+            send_txt = r.recognize_google(audio,language = LANGUAGE, key = GOOGLE_SPEECH_KEY)
             #send_txt = r.recognize_sphinx(audio)            
 
             print("got back from google")
-            print(str(send_txt)) 
+            print(send_txt.encode('utf-8')) 
             print("getting response")
 
             response = get(ENDPOINT.format(target = send_txt))
