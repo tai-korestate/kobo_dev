@@ -1,5 +1,8 @@
 ifcconfig wlan0
 iwconfig wlan0 essid "The Link" thelinkseoul
+
 cd /
 cd /home/pi/Kobo/kobo_dev/
-lxterminal -e python3 cap_and_send.py 
+
+git pull
+python3 cap_and_send.py 
