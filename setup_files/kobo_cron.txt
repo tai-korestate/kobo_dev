@@ -1,0 +1,1 @@
+@reboot sh ~/kobo_dev/load_program.sh

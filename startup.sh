@@ -31,11 +31,12 @@ sudo pip3 install SpeechRecognition &&
 #Build Directory.Bullshit
 
 cd ~/ &&
-sudo git clone https://www.github.com/tai-korestate/kobo_stable.git &&
-cd ~/kobo_stable/ &&
-python3 setup.py &&
-crontab -e > my_cron.txt
+git clone https://www.github.com/tai-korestate/kobo_stable.git &&
 
+cd ~/kobo_stable/utils/ &&
+git clone https://www.github.com/oaubert/python-vlc.git
+cd /python-vlc/
+python3 setup.py install 
 
 cd /etc/
 sudo echo "sh /home/pi/kobo_stable/load_program.sh" > rc.local 
